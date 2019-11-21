@@ -1,0 +1,127 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  background: #000614;
+}
+
+body {
+  color: white;
+  padding: 44px;
+  display: flex;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  font-size: 18px;
+}
+
+fieldset {
+  padding: 0;
+  border: none;
+}
+
+ul.iam {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+ul.iam li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.form {
+  margin-bottom: 40px;
+}
+
+.form input {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 20px;
+  color: white;
+  padding: 15px 0;
+  border-bottom: 1px solid white;
+  min-width: 300px;
+  outline: 0;
+}
+
+.form input:focus {
+  border-bottom: 1px solid #aaddfa;
+}
+
+.form button {
+  background: #222;
+  color: white;
+  font-weight: 700;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.form button:hover {
+  background: #4f0000;
+}
+
+h1,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: 100;
+  margin: 19px 0 20px;
+  color: #aaddfa;
+  font-size: 36px;
+}
+
+h1 strong {
+  font-weight: 700;
+  color: white;
+}
+
+p,
+h4 {
+  margin: 0 0 20px;
+}
+
+aside {
+  width: 85px;
+}
+
+main {
+  max-width: 830px;
+  padding-left: 44px;
+}
+
+button {
+  display: block;
+}
+
+@media only screen and (max-width: 840px) {
+  body {
+    flex-direction: column;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  aside {
+    width: 100%;
+  }
+  main {
+    max-width: 100%;
+    padding-left: 0;
+  }
+  ul.iam li {
+    display: block;
+    margin-right: 0;
+  }
+}
