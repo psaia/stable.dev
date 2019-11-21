@@ -55,6 +55,7 @@ ul.iam li {
 }
 
 .form button {
+  display: block;
   background: #222;
   color: white;
   font-weight: 700;
@@ -66,6 +67,11 @@ ul.iam li {
 
 .form button:hover {
   background: #4f0000;
+}
+
+.form button:disabled {
+  background: #000;
+  cursor: not-allowed;
 }
 
 h1,
@@ -99,10 +105,6 @@ aside {
 main {
   max-width: 830px;
   padding-left: 44px;
-}
-
-button {
-  display: block;
 }
 
 @media only screen and (max-width: 840px) {

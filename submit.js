@@ -14,12 +14,17 @@ $(function() {
         }
       });
 
+    $("button")
+      .text("Sending...")
+      .prop("disabled", true);
+
     axios
       .post(
         "https://us-central1-stable-259400.cloudfunctions.net/mailinglist",
         o
       )
-      .then(function(res) {});
-    $(".fields").html("<p>Your invitation request has been sent.</p>");
+      .then(function(res) {
+        $(".fields").html("<p>Your invitation request has been sent.</p>");
+      });
   });
 });
